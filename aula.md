@@ -4,6 +4,7 @@ Maneira de dar instrução ao computador.
 Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para resolver problemas.
 
 > 💡 **Algoritmo**: Sequência de passos lógica e finita para resolução de um problema.
+
 ## Peças de uma linguagem
 
 - Comentários
@@ -34,13 +35,15 @@ Apresentar os dados
 # Operadores
 
 - [x] Operadores de atribuição de valor: =
-- [x] Operador de concatenação: +
+- [x] Operador de contatenação: +
+- [x] Operadores de comparação: == != <= >= < >
 
 ## Estruturas de dados:
 
 ### Arrays: 
 
-- [x] Uma lista que contém qualquer tipo de dado 
+- [x] Uma lista que contém qualquer tipo de dado
+- [x] Métodos de array: push, find, forEach
 
 ### Objetos:
 
@@ -53,3 +56,21 @@ Apresentar os dados
 - [x] criar, passar argumento
 - [x] excutar
 - [x] arrow function / named function
+
+# Estrutura de repetição
+
+- [x] while
+
+# Condicionais
+
+- [x] switch
+- [x] if/else
+
+## Módulos em Node.js:
+
+- [x] Importação de módulos (require, CommonJS)
+- [x] Biblioteca 'inquirer' para criar prompts interativos
+
+## Programação assíncrona e Promises:
+
+- [x] Uso de funções assíncronas (async/await)
