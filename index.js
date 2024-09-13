@@ -22,10 +22,10 @@ const salvarMetas = async () => {
 
 const cadastrarMeta = async () => {
     const meta = await input({
-        message: "Digite a meta:"
+        message: "Digite aqui sua meta:"
     })
     if (meta.length == 0) {
-        mensagem = "A meta não pode ser vazia."
+        mensagem = "ATENÇÃO: a meta não pode ser vazia."
         return cadastrarMeta()
     }
 
@@ -41,7 +41,7 @@ const listarMetas = async () => {
         return
     }
     const respostas = await checkbox({
-        message:"Use as setas para mudar de meta, o espaço para marcar ou desmarcar e o enter para finalizar essa etapa",
+        message:"Use SETAS para mudar de meta, ESPAÇO para marcar ou desmarcar uma meta e ENTER para finalizar essa etapa.",
         choices: [...metas]
     })
 
@@ -51,7 +51,7 @@ const listarMetas = async () => {
     })
 
     if (respostas.length == 0) {
-        mensagem = "Nenhuma meta selecionada!"
+        mensagem = "ATENÇÃO: nenhuma meta selecionada."
         return
     }
 
@@ -69,7 +69,7 @@ const listarMetas = async () => {
 
 const deletarMetas = async () => {
     if(metas.length == 0) {
-        mensagem = "Não existem metas"
+        mensagem = "Não existem metas."
         return
     }
     
@@ -94,7 +94,7 @@ const deletarMetas = async () => {
         })
     })
 
-    mensagem = "Metas deletadas com sucesso!"
+    mensagem = "Meta(s) deletada(s) com sucesso!"
     
 }
 
@@ -129,7 +129,7 @@ const metasAbertas = async () => {
     })
 
     if (abertas.length == 0) {
-        mensagem = 'Não existem metas abertas!'
+        mensagem = 'ATENÇÃO: não existem metas abertas'
         return
     }
 
